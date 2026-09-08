@@ -20,9 +20,10 @@ Requires Python 3. No additional packages are needed.
 
 ## Results
 
-The program displays each product's revenue in the terminal and saves total, drinks, and food revenue to `sales_summary.txt`.
+The program displays each product's revenue and total units sold in the terminal. It saves total units sold and total, drinks, and food revenue to `sales_summary.txt`.
 
 For the original sample data:
+- Total units sold: 63
 - Total revenue: EUR 259.00
 - Drinks revenue: EUR 85.00
 - Food revenue: EUR 174.00
