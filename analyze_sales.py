@@ -1,23 +1,22 @@
 import csv
 
 with open("sales.csv", newline="") as file:
-    reader = csv.reader(file)
-    header = next(reader)
+    reader = csv.DictReader(file)
     total_revenue = 0
     drinks_revenue = 0
     food_revenue = 0
 
     for row in reader:
-        product = row[0]
-        price = float(row[2])
-        quantity = int(row[3])
+        product = row["Product"]
+        price = float(row["Unit Price (EUR)"])
+        quantity = int(row["Quantity"])
         revenue = price * quantity
         total_revenue += revenue
 
-        if row[1] == "Drink":
+        if row["Category"] == "Drink":
             drinks_revenue += revenue
 
-        if row[1] == "Food":
+        if row["Category"] == "Food":
             food_revenue += revenue
 
         print (f"{product}: EUR {revenue:.2f}")
