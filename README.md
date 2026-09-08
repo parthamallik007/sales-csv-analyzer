@@ -23,6 +23,7 @@ Requires Python 3. No additional packages are needed.
 The program displays each product's revenue and total units sold in the terminal. It saves total units sold and total, drinks, and food revenue to `sales_summary.txt`.
 
 For the original sample data:
+- Most sold product: Water (20 units)
 - Total units sold: 63
 - Total revenue: EUR 259.00
 - Drinks revenue: EUR 85.00
